@@ -83,10 +83,10 @@
             background: lighten($primary-color, 5%);
         }
     }
-    &.btn-light {
-        @include set-background($light-color);
+    &.btn-dark {
+        @include set-background($dark-color);
         &:hover {
-            background: lighten($light-color, 5%);
+            background: lighten($dark-color, 5%);
         }
     }
     &.btn-success {
@@ -162,4 +162,15 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+.table {
+    th, td {
+        padding: 1rem;
+        text-align: left;
+    }
+
+    th {
+        background: $light-color;
+    }
 }
